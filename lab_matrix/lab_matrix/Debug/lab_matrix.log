@@ -1,8 +1,0 @@
-﻿  map_matrix.cpp
-C:\Users\mplak\source\repos\lab_matrix\lab_matrix\map_matrix.cpp(44,50): warning C4244: return: преобразование "_Ty2" в "int", возможна потеря данных
-          with
-          [
-              _Ty2=double
-          ]
-C:\Users\mplak\source\repos\lab_matrix\lab_matrix\map_matrix.cpp(68,20): warning C4018: <: несоответствие типов со знаком и без знака
-  lab_matrix.vcxproj -> C:\Users\mplak\source\repos\lab_matrix\Debug\lab_matrix.exe
