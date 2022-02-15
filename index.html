@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .input-grid {
+            display: grid;
+            grid-template-columns: 10em 1fr;
+        }
+        .option-grid {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 1fr;
+        }
+        .container {
+            position: relative;
+            left: 30%;
+            max-width:40%;
+            margin: 20px;
+        }
+        .container fieldset {
+            margin: 20px 0;
+        }
+        input, textarea{
+            max-width: 40%;
+            margin-bottom: 10px;
+        }
+        select {
+            max-width: 41%;
+            margin-bottom: 10px;
+        }
+        button {
+            width:200px;
+            height: 50px;
+        }
+        span[mandatory]:after {
+            content: "*";
+            color:red;
+        }
+        .italic {
+            font-style: italic;
+        }
+
+    </style>
+    
+    <div class="container">
+        <h1>Форма заявки на работу</h1>
+        <span class="italic" mandatory>Пожалуйста, заполните форму. Обязательные поля отмечены</span>
+        
+        <fieldset class="input-grid">
+            <legend>Контактная информация</legend>
+
+            <span mandatory>Имя</span>
+            <input type="text" />
+
+            <span>Телефон</span>
+            <input type="phone" />
+
+            <span mandatory>Email</span>
+            <input type="email" />
+        </fieldset>
+
+        <fieldset class="input-grid">
+            <legend>Персональная информация</legend>
+
+            <span mandatory>Возраст</span>
+            <input type="number" />
+
+            <span>Пол</span>
+            <select name="Пол">
+                <option>Мужчина</option>
+                <option>Женщина</option>
+            </select>
+
+            <span>Перечислите личные качества</span>
+            <textarea></textarea>
+
+            </fieldset>
+        
+        <fieldset class="option-grid">
+            <legend>Выберите ваших любимых животных</legend>
+            <div><input type="checkbox" value="Зебра">     <span>Зебра</span></div>
+            <div><input type="checkbox" value="Кошка">     <span>Кошка</span></div>
+            <div><input type="checkbox" value="Анаконда">  <span>Анаконда</span></div>
+            <div><input type="checkbox" value="Человек">   <span>Человек</span></div>
+            <div><input type="checkbox" value="Слон">      <span>Слон</span></div>
+            <div><input type="checkbox" value="Антилопа">  <span>Антилопа</span></div>
+            <div><input type="checkbox" value="Голубь">    <span>Голубь</span></div>
+            <div><input type="checkbox" value="Краб">      <span>Краб</span></div>
+        </fieldset>
+        <button>Отправить информацию</button>
+    </div>
+
+</body>
+</html>
