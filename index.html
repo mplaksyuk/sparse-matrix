@@ -1,47 +1,201 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-</head>
-<body color="red">
-    <div id="container"></div>
-    <script>
-        var colors = Array('white', 'red', 'blue', 'yellow');
-var prev = [];
-
-for(var j = 0; j < 30; j++){
-    var row = document.createElement("div");
-    row.className='row';
-    
-    var values = [];
-    var prev_col;
-    for(var i = 0; i < 60; i++) {
-        var index = Math.floor(Math.random()*colors.length);
-        if((prev.length == 0 || prev[i] != index) && prev_col != index){
-            prev_col = index;
-            var color = colors[index];
-            var block = document.createElement("div");
-            var blblock = document.createElement("div");
-
-            block.style.backgroundColor = color;
-            blblock.style.backgroundColor = 'black';
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-around">
+            <a class="navbar-brand" href="index.html">PODYH</a>
+            <div class="contact d-flex flex-column">
+                <span class="number">+380731296496</span>
+                <span class="number">+380731296496</span>
+                
+                <!-- Button trigger modal -->
+                <button type="button" class="btn feed-back btn-link text-muted" data-toggle="modal" data-target="#exampleModal">
+                    Feed back
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <div class="w-100 d-flex justify-content-center">
+                            <h5 class="modal-title text-dark" id="exampleModalLabel">Feedback</h5>
+                        </div>
+                        <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                            <div><span>&times;</span></div>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                        <div class="p-2 d-flex flex-column align-items-center">
+                            <span class="text-secondary">Your name</span>
+                            <input type="text" class="form-control w-100">
+                        </div>
+                        <div class="p-2 d-flex flex-column align-items-center">
+                            <span class="text-secondary">Phone</span>
+                            <input type="phone" class="form-control w-100">
+                        </div>
+                        <div class="p-2 d-flex flex-column align-items-center">
+                            <span class="text-secondary">Email</span>
+                            <input type="email" class="form-control w-100">
+                        </div>
+                        <div class="p-2 d-flex flex-column align-items-center">
+                            <span class="text-secondary">Message</span>
+                            <textarea class="form-control" aria-label="With textarea" rows="5"></textarea>
+                        </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-secondary w-25" data-dismiss="modal">Send</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="nav-footer position-sticky d-flex align-items-center justify-content-center">
             
-            row.appendChild(block);
-            row.appendChild(blblock);
-            values.push(index);
-        }
-        else {
-            i--;
-        }
-    }
-    prev = values;
-    document.getElementById("container").appendChild(row);
+        <a class="text-white px-2" href="index.html">Main</a>
+        <a class="text-white px-2" href="index.html">Catalog</a>
+        <a class="text-white px-2" href="index.html">Order</a>
+        <a class="text-white px-2" href="index.html">Price list</a>
+        <a class="text-white px-2" href="index.html">Contact</a>
 
-}
-    </script>
-</body>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class=" w-100" src="images/1CD261B2-CC60-454B-86B2-E0AABA5A202A.jpeg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/348a28_1b6736118a5a427a879c8a8af76f4e90~mv2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/348a28_31c0ce2ac74c4d25bd804bb1008e72af~mv2.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/348a28_5419ac910e914264a39d1966b37889ff~mv2.jpg" alt="fourth slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/348a28_7028d779cfbf4b378f16f24d0c9d9dfd~mv2.jpg" alt="Fifth slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/348a28_6b73eabf70d94758b73a456b8a09bf33~mv2.jpg" alt="Sixth slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div class="container">
+        <div class="row">
+            <ol class="breadcrumb bg-white">
+                <li class="breadcrumb-item"><a class="text-secondary" href="#">Catalog</a></li>
+                <li class="breadcrumb-item"><a class="text-secondary" href="#">Dress</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Jaranga dress</li>
+            </ol>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <div class="w-100 btn-link text-secondary" onclick="toggleClass('shorts')">Shorts</div>
+                <ul id="shorts" class="d-none text-secondary">
+                    <li class="btn-link text-secondary">qweqwe</li>
+                    <li class="btn-link text-secondary">qweqwe</li>
+                    <li class="btn-link text-secondary">qweqwe</li>
+                    <li class="btn-link text-secondary">qweqwe</li>
+                </ul>
+                <div class="w-100 btn-link text-secondary" onclick="toggleClass('dress')">Dress</div>
+                <ul id="dress" class="d-none text-secondary">
+                    <li class="btn-link text-secondary">qweqwe</li>
+                    <li class="btn-link text-secondary">qweqwe</li>
+                    <li class="btn-link text-secondary">qweqwe</li>
+                    <li class="btn-link text-secondary">qweqwe</li>
+                </ul>
+                <div class="w-100 btn-link text-secondary" onclick="toggleClass('bags')">Bags</div>
+                <ul id="bags" class="d-none text-secondary">
+                    <li class="btn-link text-secondary">qweqwe</li>
+                    <li class="btn-link text-secondary">qweqwe</li>
+                    <li class="btn-link text-secondary">qweqwe</li>
+                    <li class="btn-link text-secondary">qweqwe</li>
+                </ul>
+            </div>
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4"></div>
+                    <div class="col-12 col-md-6 col-lg-4"></div>
+                    <div class="col-12 col-md-6 col-lg-4"></div>
+                    <div class="col-12 col-md-6 col-lg-4"></div>
+                    <div class="col-12 col-md-6 col-lg-4"></div>
+                    <div class="col-12 col-md-6 col-lg-4"></div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <footer>
+          <div class="container d-flex justify-content-center">
+              <div class="col-8">
+                <div class="row">
+                    <div class="col-6 p-3">
+                        <span class="text-secondary">
+                            qweqweqweqw eqweqweqweq weqweqweqw eqweqweqwe qweqweqweqw eqweqweqwe qweqweqwe
+                        </span>
+                    </div>
+                    <div class="col-6 p-3">
+                        <span class="text-secondary">
+                            qweqweqweqw eqweqweqweq weqweqweqw eqweqweqwe qweqweqweqw eqweqweqwe qweqweqwe
+                        </span>
+                    </div>
+                </div>
+            </div>
+            </div>
+      </footer>
+
+
+    <template id="tproduct">
+            <div class="product">
+                <figure class="product-image bg-light p-2">
+                    <img class="w-100 h-75 pb-2" src="images/1CD261B2-CC60-454B-86B2-E0AABA5A202A.jpeg" alt='Image')></img>
+
+                    <div class="product-meta">
+                        <h3 class="product-title">
+                            <a class="text-muted"href="#">Jaranga dress</a>
+                        </h3>
+                        <h4 class="product-price">
+                            UAH 10400.00
+                        </h4>
+                    </div>
+                </figure>
+            </div>
+    </template>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+  </body>
 </html>
