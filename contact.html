@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PODYH</title>
+</head>
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+
+            <!-- HEADER -->
+            <header name="header">
+                <div class="container">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="main.html"><img id="logoImage" src="../images/logo.png" alt="LOGO"></a>
+                    </div>
+
+                    <div class="contact mx-3">
+                        <!-- Contact -->
+                        <div class="phone-nubmers">
+                            <h4 class="number my-2">+380731296496</h4>
+                            <h4 class="number my-2">+380731296496</h4>
+                        </div>
+                        <!-- Feed back -->
+                        <div class="feedback">
+                            <ul class="link text-secondary btn-open-modal">Feed back</ul>
+                        </div>  
+                    </div>
+                </div>
+            </header>
+
+            <!-- MENU -->
+            <menu name="menu" class="position-sticky d-flex align-items-center justify-content-center">
+                <ul class="m-0 p-0">
+                    <li> <a class="link link-white px-3" href="main.html">Main</a></li>
+                    <li> <a class="link link-white px-3" href="catalog.html">Catalog</a></li>
+                    <li> <a class="link link-white px-3" href="catalog.html">Order</a></li>
+                    <li> <a class="link link-white px-3" href="price-list.html">Price list</a></li>
+                    <li> <a class="link link-white px-3" href="contact.html">Contact</a></li>
+                </ul>
+            </menu>
+
+             <!--PRICE LIST-->
+            
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer name="footer" class="py-3">
+            <div class="container pt-3">
+                <div class="company col-4">
+                    <span class="text-secondary">
+                        2020-2022 podyh company
+                    </span>
+                    <span class="text-secondary">
+                        m.plaksyuk@podyh.com
+                    </span>
+                </div>
+                <ul class="menu col-4 list-group">
+                    <a class="text-secondary" href="main.html"> <li class="list-item link">Home</li></a>
+                    <a class="text-secondary" href="catalog.html"> <li class="list-item link">Catalog</li></a>
+                    <a class="text-secondary" href="catalog.html"> <li class="list-item link">Order</li></a>
+                    <a class="text-secondary" href="catalog.html"> <li class="list-item link">Price list</li></a>
+                    <a class="text-secondary" href="catalog.html"> <li class="list-item link">Contact</li></a>
+                </ul>
+                <div class="recomendation col-4">
+                    <svg class="m-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261
+                        .793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756
+                        -1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304
+                        3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469
+                        -2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266
+                        1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653
+                        1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.4
+                        3.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386
+                        0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    <div class="github">
+                        <span class="text-secondary">
+                            Website development
+                        </span>
+                        <a href="https://github.com/mplaksyuk" class="text-secondary link">mplaksyuk</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+<!-- MODAL -->
+
+<div class="modal d-none">
+    <div class="modal-background"></div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title text-dark" id="exampleModalLabel">Feedback</h2>
+                <button type="button" class="btn-close">
+                    <div class="cross">
+                        <div class="cross-line first-line"></div>
+                        <div class="cross-line seccond-line"></div>
+                    </div>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="p-2 modal-name">
+                    <span class="text-secondary">Your name</span>
+                    <input type="text" class="form-control w-100">
+                </div>
+                <div class="p-2 modal-phone">
+                    <span class="text-secondary">Phone</span>
+                    <input type="phone" class="form-control w-100">
+                </div>
+                <div class="p-2 modal-mail">
+                    <span class="text-secondary">Email</span>
+                    <input type="email" class="form-control w-100">
+                </div>
+                <div class="p-2 modal-message">
+                    <span class="text-secondary">Message</span>
+                    <textarea class="form-control" aria-label="With textarea" rows="5"></textarea>
+                </div>
+            </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary w-25 btn-send" data-dismiss="modal">Send</button>
+        </div>
+    </div>
+ </div>
+</div>
+
+<script src="modal.js"></script>
+<script src="contact.js"></script>
+
+</body>
+</html>
