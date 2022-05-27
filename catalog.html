@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PODYH</title>
+</head>
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+
+            <!-- HEADER -->
+            <header name="header">
+                <div class="container">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="main.html"><img id="logoImage" src="../images/logo.png" alt="LOGO"></a>
+                    </div>
+
+                    <div class="contact mx-3">
+                        <!-- Contact -->
+                        <div class="phone-nubmers">
+                            <h4 class="number my-2">+380731296496</h4>
+                            <h4 class="number my-2">+380731296496</h4>
+                        </div>
+                        <!-- Feed back -->
+                        <div class="feedback">
+                            <ul class="link text-secondary btn-open-modal">Feed back</ul>
+                        </div>  
+                    </div>
+                </div>
+            </header>
+
+            <!-- MENU -->
+            <menu name="menu" class="position-sticky d-flex align-items-center justify-content-center">
+                <ul class="m-0 p-0">
+                    <li> <a class="link link-white px-3" href="main.html">Main</a></li>
+                    <li> <a class="link link-white px-3" href="catalog.html">Catalog</a></li>
+                    <li> <a class="link link-white px-3" href="catalog.html">Order</a></li>
+                    <li> <a class="link link-white px-3" href="price-list.html">Price list</a></li>
+                    <li> <a class="link link-white px-3" href="contact.html">Contact</a></li>
+                </ul>
+            </menu>
+
+            <!-- SLIDER -->
+            <div name="slider" id="carouselExampleFade" class="carousel mb-2" data-bs-ride="carousel" data-interval="4000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active"slide="0"><img src="../images/1.jpeg" alt="First slide"></div>
+                    <div class="carousel-item" slide="1"><img src="../images/2.jpg" alt="Second slide"></div>
+                    <div class="carousel-item" slide="2"><img src="../images/3.jpg" alt="Third slide"></div>
+                    <div class="carousel-item" slide="3"><img src="../images/4.jpg" alt="fourth slide"></div>
+                    <div class="carousel-item" slide="4"><img src="../images/5.jpg" alt="Fifth slide"></div>
+                    <div class="carousel-item" slide="5"><img src="../images/6.jpg" alt="Sixth slide"></div>
+                </div>
+                <div class="carousel-buttons">
+                    <div class="button-prev">
+                        <button class="carousel-prev" data-slide="prev">
+                            <div class="arrow">
+                                <div class="line first"></div>
+                                <div class="line seccond"></div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="button-next">
+                        <button class="carousel-next" data-slide="next">
+                            <div class="arrow">
+                                <div class="line first"></div>
+                                <div class="line seccond"></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <button class="switch-btn active" type="button" data-slide="0"><div class="plate"></div></button>
+                    <button class="switch-btn" type="button" data-slide="1"><div class="plate"></div></button>
+                    <button class="switch-btn" type="button" data-slide="2"><div class="plate"></div></button>
+                    <button class="switch-btn" type="button" data-slide="3"><div class="plate"></div></button>
+                    <button class="switch-btn" type="button" data-slide="4"><div class="plate"></div></button>
+                    <button class="switch-btn" type="button" data-slide="5"><div class="plate"></div></button>
+                </div>
+                
+            </div>
+            <!-- HISTORY -->
+            <div class="history container-sm">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item text-secondary m-2"><a class="text-secondary link" href="#">Catalog</a></li>
+                    <li class="breadcrumb-item text-secondary m-2"><a class="text-secondary link" href="#">Dress</a></li>
+                    <li class="breadcrumb-item text-muted m-2 active" aria-current="page">Jaranga dress</li>
+                </ol>
+            </div>
+
+            <!-- CATALOG -->
+            <div name="catalog" class="container-sm">
+                <!-- Left Block -->
+                <div id="leftBlock">
+                    <div class="product-list ms-2 my-2">
+                        <label class="text-secondary" for="shorts">Shorts</label>
+                        <ul id="shorts" class="dropdown-list d-none text-secondary ms-3">
+                            <a href="catalog.html"><li class="link text-secondary">T-shorts & Tops</li></a>
+                            <a href="catalog.html"><li class="link text-secondary">Hodie & Sweatshirts</li>
+                            <a href="catalog.html"><li class="link text-secondary">Pants</li></a>
+                            <a href="catalog.html"><li class="link text-secondary">Shorts</li></a>
+                        </ul>
+                        <label class="text-secondary active" for="dress">Dress</label>
+                        <ul id="dress" class="dropdown-list  text-secondary ms-3">
+                            <a href="catalog.html"><li class="link text-secondary">Midi dress</li></a>
+                            <a href="catalog.html"><li class="link text-secondary">Shift Dress</li></a>
+                            <a href="catalog.html"><li class="link text-secondary">Bodycon Dress</li></a>
+                            <a href="catalog.html"><li class="link text-secondary">Jaranga Dress</li></a>
+                        </ul>
+                        <label class="text-secondary" for="bags">Bags</label>
+                        <ul id="bags" class="dropdown-list d-none text-secondary ms-3">
+                            <a href="catalog.html"><li class="link text-secondary">Sling Bag</li></a>
+                            <a href="catalog.html"><li class="link text-secondary">Crossbody</li></a>
+                            <a href="catalog.html"><li class="link text-secondary">Satchel</li></a>
+                            <a href="catalog.html"><li class="link text-secondary">Backpack</li></a>
+                        </ul>
+                        <label class="text-secondary" for="accessories">Accessories</label>
+                        <ul id="accessories" class="dropdown-list d-none text-secondary ms-3">
+                            <a href="catalog.html"><li class="link text-secondary">Balls</li></a>
+                            <a href="catalog.html"><li class="link text-secondary">Gloves</li></a>
+                            <a href="catalog.html"><li class="link text-secondary">Hats & Beanies</li></a>
+                            <a href="catalog.html"><li class="link text-secondary">Phone Cases</li></a>
+                        </ul>
+                        <label class="text-secondary" for="shoes">Shoes</label>
+                        <ul id="shoes" class="dropdown-list d-none text-secondary  ms-3">
+                            <a href="catalog.html"><li class="link text-secondary">Sneakers</li></a>
+                            <a href="catalog.html"><li class="link text-secondary">Running</li></a>
+                            <a href="catalog.html"><li class="link text-secondary">Soccer</li></a>
+                            <a href="catalog.html"><li class="link text-secondary">Golf</li></a>
+                        </ul>
+                    </div>
+                    <div class="price-list">
+                        <a class="text-dark link" href="price-list.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" style="fill: black !important;" class="mb-2" viewBox="0 0 16 16">
+                                <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V9H3V2a1 1 0 0 1 1-1h5.5v2zM3 12v-2h2v2H3zm0 1h2v2H4a1 1 0 0 1-1-1v-1zm3 2v-2h3v2H6zm4 0v-2h3v1a1 1 0 0 1-1 1h-2zm3-3h-3v-2h3v2zm-7 0v-2h3v2H6z"/>
+                            </svg>
+                            Price List
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Center Block -->
+                <div id="centerBlock" class="col-8 ">
+                    <div class="catalog container-sm" value="1">
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                    </div>
+                    <div class="catalog container-sm d-none" value="2">
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                    </div>
+                    <div class="catalog container-sm d-none" value="3">
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                    </div>
+                    <div class="catalog container-sm d-none" value="4">
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                    </div>
+                    <div class="catalog container-sm d-none" value="5">
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                    </div>
+                    <div class="catalog container-sm d-none" value="6">
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                    </div>
+                    <div class="switch-catalog m-3" data-toggle="buttons">
+                        <input type="radio" name="options" id="option1" checked/>
+                        <label class="option m-2" data="1" for="option1">1</label>
+
+                        <input type="radio" name="options" id="option2"/>
+                        <label class="option m-2" data="2" for="option2">2</label>
+                        <input type="radio" name="options" id="option3"/>
+
+                        <label class="option m-2" data="3" for="option3">3</label>
+                        <input type="radio" name="options" id="option4"/> 
+
+                        <label class="option m-2" data="4" for="option4">4</label>
+
+                        <input type="radio" name="options" id="option5"/> 
+                        <label class="option m-2" data="5" for="option5">5</label>
+
+                        <input type="radio" name="options" id="option6"/> 
+                        <label class="option m-2" data="6" for="option6">6</label>
+                    </div> 
+                    <!--ABOUT PRODUCTS-->
+                    <div class="about col-12 container-sm">
+                        <div class="col-6 p-3">
+                            <span class="text-secondary">
+                                The period of 1960-1980 is considered to be a turning point in architecture in its content: cardinal updates of forms and constructions, refusal of decoration and nationalization, functional approach. Following the principles that the architects of the twentieth century adopted for themselves, the designer of the brand created six images inspired by the architecture of Kyiv. Recognizable objects of the native city were chosen: the library named after V.I.Vernadsky, Hotel «Salut», Hotel «Mir», «Memorial Park», the building of the Faculty of Physics of KNU named after T. Shevchenko, UkrINTEI, known by townsfolk as the «Plate».
+                            </span>
+                        </div>
+                        <div class="col-6 p-3">
+                            <span class="text-secondary">
+                                By this work, the PODYH brand aimed to draw public attention to the uniqueness and beauty of architecture, which is currently in an abandoned state and needs proper restoration. Wanting to influence the situation, the team decided to give part of the proceeds from the sale of the collection to restore the wall of the «Memorial Park», which was planned as the largest bas-relief in Europe. Its fate is quite tragic: for «inconsistency» with the ideas of socialism, this monument was not finished: already at the final stage of work in 1982, it was filled with concrete.
+                            </span>
+                        </div>
+                    </div>
+ 
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- FOOTER -->
+        <footer name="footer" class="py-3">
+            <div class="container pt-3">
+                <div class="company col-4">
+                    <span class="text-secondary">
+                        2020-2022 podyh company
+                    </span>
+                    <span class="text-secondary">
+                        m.plaksyuk@podyh.com
+                    </span>
+                </div>
+                <ul class="menu col-4 list-group">
+                    <a class="text-secondary" href="main.html"> <li class="list-item link">Home</li></a>
+                    <a class="text-secondary" href="catalog.html"> <li class="list-item link">Catalog</li></a>
+                    <a class="text-secondary" href="catalog.html"> <li class="list-item link">Order</li></a>
+                    <a class="text-secondary" href="price-list.html"> <li class="list-item link">Price list</li></a>
+                    <a class="text-secondary" href="contact.html"> <li class="list-item link">Contact</li></a>
+                </ul>
+                <div class="recomendation col-4">
+                    <svg class="m-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261
+                        .793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756
+                        -1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304
+                        3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469
+                        -2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266
+                        1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653
+                        1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.4
+                        3.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386
+                        0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    <div class="github">
+                        <span class="text-secondary">
+                            Website development
+                        </span>
+                        <a href="https://github.com/mplaksyuk" class="text-secondary link">mplaksyuk</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- MODAL -->
+    <div class="modal d-none">
+        <div class="modal-background"></div>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title text-dark" id="exampleModalLabel">Feedback</h2>
+                    <button type="button" class="btn-close">
+                        <div class="cross">
+                            <div class="cross-line first-line"></div>
+                            <div class="cross-line seccond-line"></div>
+                        </div>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="p-2 modal-name">
+                        <span class="text-secondary">Your name</span>
+                        <input type="text" class="form-control w-100">
+                    </div>
+                    <div class="p-2 modal-phone">
+                        <span class="text-secondary">Phone</span>
+                        <input type="phone" class="form-control w-100">
+                    </div>
+                    <div class="p-2 modal-mail">
+                        <span class="text-secondary">Email</span>
+                        <input type="email" class="form-control w-100">
+                    </div>
+                    <div class="p-2 modal-message">
+                        <span class="text-secondary">Message</span>
+                        <textarea class="form-control" aria-label="With textarea" rows="5"></textarea>
+                    </div>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary w-25 btn-send" data-dismiss="modal">Send</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- TEMPLATES -->
+    <template id="tproduct">
+        <div class="product bg-light m-2">
+            <figure class="product-image bg-light p-2">
+                <img class="w-100 h-75 pb-2"alt='Image')></img>
+
+                <div class="product-meta">
+                    
+                    <h3 class="m-0 product-title text-secondary"></h3>
+
+                    <div class="price">
+                        <h4 class="m-0" style="font-size: 0.9375rem;">
+                            UAH&nbsp;
+                        </h4>
+                        <h4 class="m-0 product-price"></h4>
+                    </div>
+                </div>
+            </figure>
+            <input type="hidden" class="product-link" href="" name="link">
+        </div>    
+    </template>
+
+    <script src="modal.js"></script>
+    <script src="catalog.js"></script>
+    
+</body>
+</html>
